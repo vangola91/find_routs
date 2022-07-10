@@ -6,7 +6,7 @@ class City(models.Model):
     name = models.CharField(max_length=80, unique=True, verbose_name = 'Город')
 
     def __str__(self):
-        return self.name
+        return f" name = {self.name}  id  = {self.id}"
 
     class Meta:
 
